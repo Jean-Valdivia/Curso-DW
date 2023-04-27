@@ -1,0 +1,267 @@
+/*-----RESET-----*/
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/*-----header-----*/
+header {
+    background-color: #A19F9F;
+    text-decoration-color: black;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header__h{
+    width: 40%;
+}
+
+.header__img {
+    height: 300px;
+    width: 300px;
+}
+
+header section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Secular One', sans-serif;
+    font-size: 55px;
+    text-align: center;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+header ul li{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #00C5FF;
+    border-style: solid;
+    border-color: #00C5FF;
+    font-size: x-large;
+    color: white;
+    margin: 10px;
+    margin-top: 0px;
+    padding: 10px;
+}
+
+
+/**main - index**/
+
+    main{
+        background-color: antiquewhite;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .main__section__hero{
+        height: 300px;
+        font-size: 30px;
+    }
+    main section h3{
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .main__section__hero div{
+        display: flex;
+        justify-content: space-around;
+    }
+    .main__section__hero div p{
+        font-size: 30px;
+        width: 600px;
+        text-align: center;
+        margin-right: 200px;
+        padding-top: 40px;
+    }
+
+    .main__section__hero div img{
+        height: 400px;
+        padding-right: 80px;
+        
+    }
+
+    main div{
+        height: 400px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    /**noticias**/
+
+
+    .main__section__noticias{
+        margin-left: 30px;
+        
+    }
+
+    .main__section__noticias h4{
+        width: 600px;
+        text-align: center;
+        font-size: 40px;
+    }
+    .main__section__noticias div{
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        
+    }
+    .main__section__noticias div h5{
+        font-size: 25px;
+        font-weight: 300px;
+    }
+    .main__section__noticias div p{
+        font-size: 20px;
+        font-weight: 150px;
+    }
+
+
+    /**Proximo evento**/
+
+    .main__section__proximoevento{
+        width: 800px;
+        height: auto;
+        padding-top: 200px;
+        padding-right: 15px;
+        padding-bottom: 20px;
+    }
+    .main__section__proximoevento h4{
+        font-size: 30px;
+        text-align: center;
+    }
+    .main__section__proximoevento__div div{
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .main__section__proximoevento__div div h5{
+        width: 600px;
+        font-size: 20px;
+        margin-top: 15px;
+        text-align: center;
+    }
+    .main__section__proximoevento__div div p{
+        font-size: 18px
+    }
+    .main__section__proximoevento div img{
+        width: 150px;
+        padding-top: 10px;
+    }
+
+/**main - contacto**/
+
+.main__contacto{
+    padding: 20px;
+}
+
+.formulario{
+    font-size: 20px;
+}
+.formulario div{
+    width: 100%;
+    height: 40px;
+    justify-content: space-between;
+    padding:10px
+}
+.formulario div label{
+    padding-top: 5px;
+}
+.formulario div input{
+    width: 1200px;
+    
+}
+
+
+/**main - quienes-somos**/
+
+.main__section__qs div{
+    display: flex;
+    height: fit-content;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-style: dashed;
+}
+
+.main__section__qs h5{
+    font-size: 25px;
+    width: 25%;
+
+}
+
+.main__section__qs p{
+    font-size: 20px;
+    width: 50%;
+}
+
+.main__section__qs img{
+    width: 25%;
+}
+
+/**main - experiencias**/
+
+.main_section_experiencias{
+    margin: 3%;
+    
+}
+
+.main_section_experiencias h4{
+    font-size: 30px;
+}
+
+.main_section_experiencias img{
+    align-items: center;
+    width: min-content;
+    height: auto;
+}
+
+
+
+/****footer***/
+
+footer{
+    background-color: #A19F9F;
+    text-decoration-color: black;
+    margin: 0px;
+    padding: 0px;
+}
+
+footer nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer nav ul li{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+    text-decoration: underline;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    margin-top: 0px;
+}
+
+footer div{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div img{
+    height: 50px;
+    width: 50px;
+    padding-left: 10px;
+}
+
+footer div p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: small;
+    padding-top: 30px;
+    padding-right: 10px;
+}
