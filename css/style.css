@@ -8,19 +8,22 @@
 
 /*-----header-----*/
 header {
-    background-color: #A19F9F;
-    text-decoration-color: black;
+    background-color: #ced8e0;
     margin: 0px;
     padding: 0px;
 }
 
 .header__h{
+    color: #293845;
+    font-size: 60px;
     width: 40%;
+    padding: 0px 60px 0px 60px;
+    text-shadow: 1px 1px 3px black;
 }
 
 .header__img {
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
 }
 
 header section{
@@ -30,24 +33,6 @@ header section{
     font-family: 'Secular One', sans-serif;
     font-size: 55px;
     text-align: center;
-}
-
-header ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-header ul li{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #00C5FF;
-    border-style: solid;
-    border-color: #00C5FF;
-    font-size: x-large;
-    color: white;
-    margin: 10px;
-    margin-top: 0px;
-    padding: 10px;
 }
 
 
