@@ -6,19 +6,6 @@
     text-decoration: none;
 }
 
-/**Configuracion de Grid*/
-
-.index__grid-container{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);    
-    grid-template-areas: 
-    "header header header"
-    "nav nav nav"
-    "main main main"
-    "main main main"
-    "main main main"
-    "footer footer footer"
-}
 
 /*-----header-----*/
 
@@ -26,11 +13,10 @@ header {
     background-color: #ced8e0;
     margin: 0px;
     padding: 0px;
-    grid-area: header;
     height: fit-content;
 }
 
-header section{
+header section {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,7 +25,7 @@ header section{
     height: fit-content;
 }
 
-.header__h{
+.header__h {
     color: #293845;
     font-size: 55px;
     width: 40%;
@@ -51,146 +37,168 @@ header section{
     width: 17%;
 }
 
+
 /**nav**/
 
-nav{
-    grid-area: nav;
+nav {
     background-color: #ced8e0;
     height: fit-content;
 }
 
+
+
 /**main - index**/
 
-    main{
-        grid-area: main;
-        background-color: antiquewhite;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
+main {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: antiquewhite;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
-    .main__section__hero{
-        height: 300px;
-        font-size: 30px;
-    }
-    main section h3{
-        font-size: 50px;
-        text-align: center;
-    }
+/**Configuracion de Grid en index*/
 
-    .main__section__hero div{
-        display: flex;
-        justify-content: space-around;
-    }
-    .main__section__hero div p{
-        font-size: 30px;
-        width: 600px;
-        text-align: center;
-        margin-right: 200px;
-        padding-top: 40px;
-    }
+.index__body__grid-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+}
 
-    .main__section__hero div img{
-        height: 400px;
-        padding-right: 80px;
-        
-    }
+/**section hero**/
 
-    main div{
-        height: 400px;
-        display: flex;
-        justify-content: space-between;
-    }
+.main__section__hero {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
 
+.main__section__hero h3 {
+    font-size: 2.5rem;
+    text-align: center;
+}
 
-    /**noticias**/
+.main__section__hero div {
+    display: flex;
+    justify-content: space-between;
+}
 
+.main__section__hero div p {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 2rem;
+}
 
-    .main__section__noticias{
-        margin-left: 30px;
-        
-    }
-
-    .main__section__noticias h4{
-        width: 600px;
-        text-align: center;
-        font-size: 40px;
-    }
-    .main__section__noticias div{
-        height: 120px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        
-    }
-    .main__section__noticias div h5{
-        font-size: 25px;
-        font-weight: 300px;
-    }
-    .main__section__noticias div p{
-        font-size: 20px;
-        font-weight: 150px;
-    }
+.main__section__hero div img {
+    width: 450px;
+    margin: 10px;
+}
 
 
-    /**Proximo evento**/
 
-    .main__section__proximoevento{
-        width: 800px;
-        height: auto;
-        padding-top: 200px;
-        padding-right: 15px;
-        padding-bottom: 20px;
-    }
-    .main__section__proximoevento h4{
-        font-size: 30px;
-        text-align: center;
-    }
-    .main__section__proximoevento__div div{
-        height: 150px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .main__section__proximoevento__div div h5{
-        width: 600px;
-        font-size: 20px;
-        margin-top: 15px;
-        text-align: center;
-    }
-    .main__section__proximoevento__div div p{
-        font-size: 18px
-    }
-    .main__section__proximoevento div img{
-        width: 150px;
-        padding-top: 10px;
-    }
+/**noticias**/
+
+
+.main__section__noticias {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.main__section__noticias h4 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.main__section__noticias div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100px;
+}
+
+.main__section__noticias div h5 {
+    font-size: 1.5rem;
+}
+
+.main__section__noticias div p {
+    font-size: 1rem;
+}
+
+
+/**Proximo evento**/
+
+.main__section__proximoevento {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.main__section__proximoevento h4 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.main__section__proximoevento__div {
+    display: flex;
+    align-items: center;
+}
+
+.main__section__proximoevento__div div {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__section__proximoevento__div div h5 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.main__section__proximoevento__div div p {
+    font-size: 1rem
+}
+
+.main__section__proximoevento__div img {
+    height: 150px;
+}
+
 
 /**main - contacto**/
 
-.main__contacto{
+.main__contacto {
     padding: 20px;
 }
 
-.formulario{
+.formulario {
     font-size: 20px;
 }
-.formulario div{
+
+.formulario div {
     width: 100%;
     height: 40px;
     justify-content: space-between;
-    padding:10px
+    padding: 10px
 }
-.formulario div label{
+
+.formulario div label {
     padding-top: 5px;
 }
-.formulario div input{
+
+.formulario div input {
     width: 1200px;
-    
+
 }
 
 
 /**main - quienes-somos**/
 
-.main__section__qs div{
+.main__section__qs div {
     display: flex;
     height: fit-content;
     margin-top: 50px;
@@ -198,33 +206,33 @@ nav{
     border-style: dashed;
 }
 
-.main__section__qs h5{
+.main__section__qs h5 {
     font-size: 25px;
     width: 25%;
 
 }
 
-.main__section__qs p{
+.main__section__qs p {
     font-size: 20px;
     width: 50%;
 }
 
-.main__section__qs img{
+.main__section__qs img {
     width: 25%;
 }
 
 /**main - experiencias**/
 
-.main_section_experiencias{
+.main_section_experiencias {
     margin: 3%;
-    
+
 }
 
-.main_section_experiencias h4{
+.main_section_experiencias h4 {
     font-size: 30px;
 }
 
-.main_section_experiencias img{
+.main_section_experiencias img {
     align-items: center;
     width: min-content;
     height: auto;
@@ -234,7 +242,7 @@ nav{
 
 /****footer***/
 
-footer{
+footer {
     background-color: #A19F9F;
     text-decoration-color: black;
     margin: 0px;
@@ -249,14 +257,151 @@ footer{
     align-items: center;
 }
 
-footer div div img{
+footer div div img {
     height: 35px;
     padding-left: 10px;
 }
 
-footer div p{
+footer div p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: small;
     padding-top: 30px;
     padding-right: 10px;
+}
+
+
+
+/** mediaqueries 930px **/
+
+@media screen and (max-width: 930px) {
+    .header__h {
+        font-size: 40px;
+    }
+
+    .index__body__grid-container {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .main__section__hero h3 {
+        font-size: 2rem;
+    }
+
+    .main__section__hero div p {
+        font-size: 1.2rem;
+        padding-top: 0rem;
+    }
+
+    .main__section__hero div img {
+        object-fit: scale-down;
+        width: 250px;
+        height: auto;
+    }
+
+    .main__section__noticias div {
+        height: auto;
+    }
+
+    .main__section__noticias div h5 {
+        font-size: 1.2rem;
+    }
+
+    .main__section__noticias div p {
+        font-size: 0.8rem;
+    }
+
+    .main__section__proximoevento {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .main__section__proximoevento__div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main__section__proximoevento h4 {
+        font-size: 1.5rem;
+    }
+
+    .main__section__proximoevento__div div h5 {
+        font-size: 1.2rem;
+    }
+
+    .main__section__proximoevento__div div p {
+        font-size: 0.6rem
+    }
+
+    .main__section__proximoevento__div img {
+        height: 75px;
+    }
+}
+
+
+/** mediaqueries 450px **/
+
+
+@media screen and (max-width: 450px) {
+    header{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .header__h {
+        font-size: 25px;
+        width: auto;
+    }
+    .header__img{
+        width: 100px;
+    }
+    header nav {
+        width: 210px;
+    }
+    header section {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        align-items: center;
+    }
+    .index__body__grid-container {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .main__section__hero div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .main__section__hero div p {
+        font-size: 1rem;
+    }
+    .main__section__hero div img {
+        width: 350px;
+        object-fit: cover;
+        padding: 5px;
+    }
+
+    .main__section__noticias {
+        grid-column-start: none;
+        grid-column-end: none;
+        grid-row-start: none;
+        grid-row-end: none;
+        display: flex;
+        flex-direction: column;
+    }
+    .main__section__noticias div h5 {
+        font-size: 1rem;
+    }
+    .main__section__noticias div p {
+        font-size: 0.6rem;
+    }
+
+        .main__section__proximoevento {
+            grid-column-start: none;
+            grid-column-end: none;
+        }
 }
