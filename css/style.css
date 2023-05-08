@@ -52,9 +52,7 @@ nav {
 
 main {
     padding: 5px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
     background-color: antiquewhite;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -63,12 +61,11 @@ main {
 
 .index__body__grid-container {
     display: grid;
-    width: 100%;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
 }
 
-/**section hero**/
+/**index - section hero**/
 
 .main__section__hero {
     grid-row-start: 1;
@@ -100,7 +97,7 @@ main {
 
 
 
-/**noticias**/
+/**index - noticias**/
 
 
 .main__section__noticias {
@@ -134,7 +131,7 @@ main {
 }
 
 
-/**Proximo evento**/
+/**index - Proximo evento**/
 
 .main__section__proximoevento {
     grid-column-start: 2;
@@ -170,6 +167,8 @@ main {
 }
 
 
+
+
 /**main - contacto**/
 
 .main__contacto {
@@ -196,30 +195,99 @@ main {
 
 }
 
+/**configuracion grid - quienes somos**/
+
+.qs__main__grid-container {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: auto repeat(6, 250px);
+    grid-template-areas:
+        "titulo titulo titulo"
+        "desc1 desc1 foto1"
+        "foto2 desc2 desc2"
+        "desc3 desc3 foto3"
+        "foto4 desc4 desc4"
+        "desc5 desc5 foto5"
+        "foto6 desc6 desc6";
+}
+
+.main__section__hero__qs {
+    grid-area: titulo;
+}
+
+.main__section__div__texto1 {
+    grid-area: desc1;
+}
+
+.main__section__div__foto1 {
+    grid-area: foto1;
+}
+
+.main__section__div__texto2 {
+    grid-area: desc2;
+}
+
+.main__section__div__foto2 {
+    grid-area: foto2;
+}
+
+.main__section__div__texto3 {
+    grid-area: desc3;
+}
+
+.main__section__div__foto3 {
+    grid-area: foto3;
+}
+
+.main__section__div__texto4 {
+    grid-area: desc4;
+}
+
+.main__section__div__foto4 {
+    grid-area: foto4;
+}
+
+.main__section__div__texto5 {
+    grid-area: desc5;
+}
+
+.main__section__div__foto5 {
+    grid-area: foto5;
+}
+
+.main__section__div__texto6 {
+    grid-area: desc6;
+}
+
+.main__section__div__foto6 {
+    grid-area: foto6;
+}
 
 /**main - quienes-somos**/
 
-.main__section__qs div {
+.main__section__hero__qs {
     display: flex;
-    height: fit-content;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    border-style: dashed;
+    flex-direction: column;
+    align-items: center;
 }
 
-.main__section__qs h5 {
-    font-size: 25px;
-    width: 25%;
-
+.qs__main__grid-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.main__section__qs p {
-    font-size: 20px;
-    width: 50%;
+.qs__main__grid-container div img {
+    max-height: 250px;
+    height: 100%;
 }
 
-.main__section__qs img {
-    width: 25%;
+.qs__main__grid-container h5 {
+    font-size: 1.7rem;
+}
+
+.qs__main__grid-container p {
+    font-size: 1rem;
 }
 
 /**main - experiencias**/
@@ -338,7 +406,7 @@ footer div p {
     .main__section__proximoevento__div img {
         height: 75px;
     }
-    
+
     footer div div img {
         height: 22px;
         padding-left: 2px;
@@ -350,41 +418,49 @@ footer div p {
 
 
 @media screen and (max-width: 450px) {
-    header{
+    header {
         display: flex;
         flex-direction: row-reverse;
     }
+
     .header__h {
         font-size: 25px;
         width: auto;
     }
-    .header__img{
+
+    .header__img {
         width: 100px;
     }
+
     header nav {
         width: 210px;
     }
+
     header section {
         display: flex;
         flex-direction: column;
         width: auto;
         align-items: center;
     }
+
     .index__body__grid-container {
         display: grid;
         width: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
-    .main__section__hero div{
+
+    .main__section__hero div {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
+
     .main__section__hero div p {
         font-size: 1rem;
     }
+
     .main__section__hero div img {
         width: 350px;
         object-fit: cover;
@@ -399,15 +475,21 @@ footer div p {
         display: flex;
         flex-direction: column;
     }
+
     .main__section__noticias div h5 {
         font-size: 1rem;
     }
+
     .main__section__noticias div p {
         font-size: 0.6rem;
     }
 
-        .main__section__proximoevento {
-            grid-column-start: none;
-            grid-column-end: none;
-        }
+    .main__section__proximoevento {
+        grid-column-start: none;
+        grid-column-end: none;
+    }
+    .main__section__proximoevento__div{
+        display: flex;
+        flex-direction: row;
+    }
 }
