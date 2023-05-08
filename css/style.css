@@ -35,6 +35,7 @@ header section {
 
 .header__img {
     width: 17%;
+    max-width: 215px;
 }
 
 
@@ -336,6 +337,11 @@ footer div p {
 
     .main__section__proximoevento__div img {
         height: 75px;
+    }
+    
+    footer div div img {
+        height: 22px;
+        padding-left: 2px;
     }
 }
 
