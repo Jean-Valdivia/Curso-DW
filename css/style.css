@@ -200,7 +200,8 @@ main {
 .qs__main__grid-container {
     display: grid;
     grid-template-columns: 30% 40% 30%;
-    grid-template-rows: auto repeat(6, 250px);
+    grid-template-rows: auto repeat(6, auto);
+    grid-row-gap: 10px;
     grid-template-areas:
         "titulo titulo titulo"
         "desc1 desc1 foto1"
@@ -253,6 +254,7 @@ main {
 
 .main__section__div__foto5 {
     grid-area: foto5;
+    border-bottom: dashed #3E5B5F;
 }
 
 .main__section__div__texto6 {
@@ -263,12 +265,22 @@ main {
     grid-area: foto6;
 }
 
+.main__section__div__foto{
+    border-bottom: dashed #3E5B5F;
+    padding-bottom: 5px;
+}
+
+.main__section__div__texto{
+    border-bottom: dashed #3E5B5F;
+    border-top: dashed #3E5B5F;
+}
 /**main - quienes-somos**/
 
 .main__section__hero__qs {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; 
+    text-align: center;
 }
 
 .qs__main__grid-container div {
@@ -280,6 +292,7 @@ main {
 .qs__main__grid-container div img {
     max-height: 250px;
     height: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 
 .qs__main__grid-container h5 {
@@ -343,9 +356,15 @@ footer div p {
 /** mediaqueries 930px **/
 
 @media screen and (max-width: 930px) {
+
+/********mediaqueries header**********/
+
     .header__h {
         font-size: 40px;
     }
+
+
+/********mediaqueries index body**********/
 
     .index__body__grid-container {
         display: grid;
@@ -406,6 +425,24 @@ footer div p {
     .main__section__proximoevento__div img {
         height: 75px;
     }
+/****************mediaqueries main qs****************/
+
+.qs__main__grid-container h5 {
+    font-size: 1.3rem;
+    }
+
+.qs__main__grid-container p {
+    font-size: 0.8rem;
+    width: 90%;
+    }
+
+    .qs__main__grid-container div img {
+        max-height: 200px;
+        height: fit-content;
+    }
+
+
+/********mediaqueries footer**********/
 
     footer div div img {
         height: 22px;
@@ -491,5 +528,44 @@ footer div p {
     .main__section__proximoevento__div{
         display: flex;
         flex-direction: row;
+    }
+
+/****************mediaqueries2 main qs****************/
+
+.qs__main__grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(13, auto);
+    grid-row-gap: 5px;
+    grid-template-areas:
+        "titulo"
+        "desc1"
+        "foto1"
+        "desc2"
+        "foto2"
+        "desc3"
+        "foto3"
+        "desc4"
+        "foto4"
+        "desc5"
+        "foto5"
+        "desc6"
+        "foto6";
+}
+.qs__main__grid-container h5 {
+    font-size: 1.3rem;
+    }
+
+.qs__main__grid-container p {
+    font-size: 0.8rem;
+    width: 90%;
+    }
+
+    .qs__main__grid-container div img {
+        max-height: 200px;
+        height: fit-content;
+    }
+
+    .main__section__div__texto{
+        border-bottom: none;
     }
 }
