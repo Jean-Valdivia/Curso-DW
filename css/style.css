@@ -324,6 +324,25 @@ main {
     filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7))
 }
 
+/**main - merch**/
+
+.main__section__merch{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 350px);
+    grid-template-rows: repeat(auto);
+    justify-content: center;
+}
+
+.card{
+    margin: 10px;
+}
+
+.card-img-top {
+    height: 250px;
+    width: auto;
+    object-fit: cover;
+}
+
 
 /****footer***/
 
@@ -443,7 +462,6 @@ footer div p {
         max-height: 200px;
         height: fit-content;
     }
-
 
 /********mediaqueries footer**********/
 
