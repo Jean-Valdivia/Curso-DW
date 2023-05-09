@@ -25,6 +25,10 @@ header section {
     height: fit-content;
 }
 
+.nav {
+    justify-content: space-evenly;
+}
+
 .header__h {
     color: #293845;
     font-size: 55px;
@@ -358,7 +362,9 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 footer div div img {
@@ -369,8 +375,7 @@ footer div div img {
 footer div p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: small;
-    padding-top: 30px;
-    padding-right: 10px;
+    margin-bottom: 0px;
 }
 
 
@@ -481,6 +486,10 @@ footer div p {
         flex-direction: row-reverse;
     }
 
+    .nav {
+        justify-content: left;
+    }
+
     .header__h {
         font-size: 25px;
         width: auto;
@@ -589,4 +598,12 @@ footer div p {
     .main__section__div__texto{
         border-bottom: none;
     }
+
+/*** mediaqueries2 cambios de footer***/
+
+.footer__div__pie {
+    flex-direction: column;
+    align-items: center;
+    }
+
 }
