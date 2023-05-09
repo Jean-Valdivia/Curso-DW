@@ -290,17 +290,17 @@ main {
 }
 
 .qs__main__grid-container div img {
-    max-height: 250px;
+    max-height: 300px;
     height: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 
 .qs__main__grid-container h5 {
-    font-size: 1.7rem;
+    font-size: 2rem;
 }
 
 .qs__main__grid-container p {
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 /**main - experiencias**/
