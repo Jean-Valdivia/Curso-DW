@@ -6,6 +6,15 @@
     text-decoration: none;
 }
 
+html {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background-color: antiquewhite;
+}
 
 /*-----header-----*/
 
@@ -38,7 +47,7 @@ header section {
 }
 
 .header__img {
-    width: 17%;
+    width: 100%;
     max-width: 215px;
 }
 
@@ -57,7 +66,6 @@ nav {
 main {
     padding: 5px;
     width: 100%;
-    background-color: antiquewhite;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -354,8 +362,9 @@ footer {
     background-color: #A19F9F;
     text-decoration-color: black;
     margin: 0px;
+    margin-top: auto;
     padding: 0px;
-    grid-area: footer;
+    width: 100%;
 }
 
 .footer__div__pie {
@@ -380,18 +389,13 @@ footer div p {
 
 
 
-/** mediaqueries 930px **/
+/** mediaqueries tablet **/
 
 @media screen and (max-width: 930px) {
-
-/********mediaqueries header**********/
 
     .header__h {
         font-size: 40px;
     }
-
-
-/********mediaqueries index body**********/
 
     .index__body__grid-container {
         display: grid;
@@ -452,7 +456,6 @@ footer div p {
     .main__section__proximoevento__div img {
         height: 75px;
     }
-/****************mediaqueries main qs****************/
 
 .qs__main__grid-container h5 {
     font-size: 1.3rem;
@@ -468,7 +471,6 @@ footer div p {
         height: fit-content;
     }
 
-/********mediaqueries footer**********/
 
     footer div div img {
         height: 22px;
@@ -477,7 +479,7 @@ footer div p {
 }
 
 
-/** mediaqueries 450px **/
+/** mediaqueries mobile **/
 
 
 @media screen and (max-width: 450px) {
@@ -560,8 +562,6 @@ footer div p {
         flex-direction: row;
     }
 
-/****************mediaqueries2 main qs****************/
-
 .qs__main__grid-container {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(13, auto);
@@ -598,8 +598,6 @@ footer div p {
     .main__section__div__texto{
         border-bottom: none;
     }
-
-/*** mediaqueries2 cambios de footer***/
 
 .footer__div__pie {
     flex-direction: column;
