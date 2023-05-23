@@ -1,6 +1,16 @@
 /**lists**/
-/**maps**/
 /**extends**/
+.index__body__grid-container .main__section__hero div img, .qs__main__grid-container div img, .exp__main__acordeon div div div div img {
+  border: solid 2px;
+  box-shadow: 0px 0px 20px 1px #0d547a;
+  margin: 5px; }
+
+.index__body__grid-container .main__section__noticias, .index__body__grid-container .main__section__proximoevento, .main__section__merch .card {
+  border: dashed 2px;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 20px 1px #101b21;
+  padding: 10px; }
+
 /**mixins**/
 * {
   list-style: none;
@@ -94,8 +104,11 @@ main {
   .index__body__grid-container .main__section__noticias {
     grid-column-start: 1;
     grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 2;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: 0px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -172,8 +185,7 @@ main {
     align-items: center; }
     .qs__main__grid-container div img {
       max-height: 300px;
-      height: 100%;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); }
+      height: 100%; }
   .qs__main__grid-container h5 {
     font-size: 2rem; }
   .qs__main__grid-container p {
@@ -219,8 +231,7 @@ main {
 
 .exp__main__acordeon div div div div img {
   width: 100%;
-  padding: 10px;
-  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7)); }
+  margin: 10px; }
 
 /**configuracion merch**/
 .main__section__merch {

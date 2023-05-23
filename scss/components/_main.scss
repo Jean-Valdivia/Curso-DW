@@ -27,6 +27,7 @@ main{
                 padding-top: 2rem;
             }
             img{
+                @extend %shadowpic;
                 width: 450px;
                 margin: 10px;
             }
@@ -34,10 +35,14 @@ main{
         
     }
     .main__section__noticias{
+        @extend %shadowcontent;
         grid-column-start: 1;
         grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 2;
+        height: fit-content;
+        margin-top: auto;
+        margin-bottom: 0px;
         @include flex(flex,column,flex-end,row);
         h4{
             text-align: center;
@@ -55,6 +60,7 @@ main{
         }
     }
     .main__section__proximoevento{
+        @extend %shadowcontent;
         grid-column-start: 2;
         grid-column-end: 4;
         h4{
@@ -127,7 +133,7 @@ main{
         img{
             max-height: 300px;
             height: 100%;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+            @extend %shadowpic;
         }
     }
     h5{
@@ -201,8 +207,8 @@ main{
                 div{
                     img{
                         width: 100%;
-                        padding: 10px;
-                        filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7))
+                        margin: 10px;
+                        @extend %shadowpic;
                     }
                 }
             }
@@ -218,6 +224,7 @@ main{
     grid-template-rows: repeat(auto);
     justify-content: center;
     .card{
+        @extend %shadowcontent;
         margin: 10px;
         .card-img-top{
             height: 250px;

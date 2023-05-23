@@ -4,14 +4,21 @@ $color:(#ced8e0, antiquewhite, #293845);
 
 $screendim: (930px, 450px);
 
-/**maps**/
-
-
 
 /**extends**/
 
+%shadowpic {
+    border: solid 2px;
+    box-shadow: 0px 0px 20px 1px rgba(13,84,122,1);
+    margin: 5px;
+}
 
-
+%shadowcontent{
+    border: dashed 2px;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 20px 1px rgba(16,27,33,1);
+    padding: 10px;
+}
 /**mixins**/
 
 @mixin flex($flex, $flexdir,$justifycontent,$alignitems){
