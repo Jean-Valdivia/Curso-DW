@@ -1,0 +1,22 @@
+/**lists**/
+
+$color:(#ced8e0, antiquewhite, #293845);
+
+$screendim: (930px, 450px);
+
+/**maps**/
+
+
+
+/**extends**/
+
+
+
+/**mixins**/
+
+@mixin flex($flex, $flexdir,$justifycontent,$alignitems){
+    display: $flex;
+    flex-direction: $flexdir;
+    justify-content: $justifycontent;
+    align-items: $alignitems;   
+}

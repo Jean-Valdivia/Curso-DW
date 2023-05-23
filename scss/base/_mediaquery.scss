@@ -1,6 +1,6 @@
 /**mediaqueries tablet**/
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: nth($screendim, 1)) {
     header {
         section {
             .header__h {
@@ -57,9 +57,7 @@
             }
 
             .main__section__proximoevento__div {
-                display: flex;
-                flex-direction: column;
-
+                @include flex(flex,column,row,row);
                 div {
                     h5 {
                         font-size: 1.2rem;
@@ -109,16 +107,12 @@
 
 /**mediaqueries mobile**/
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: nth($screendim, 2)) {
     header {
-        display: flex;
-        flex-direction: row-reverse;
-
+        @include flex(flex,row-reverse,row,row);
         section {
-            display: flex;
-            flex-direction: column;
+            @include flex(flex,column,row,center);
             width: 100%;
-            align-items: center;
             padding-top: 5%;
 
             .header__h {
@@ -159,11 +153,7 @@
 
         .main__section__hero {
             div {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-
+                @include flex(flex,column,center,center);
                 p {
                     font-size: 1rem;
                 }
@@ -181,9 +171,8 @@
             grid-column-end: none;
             grid-row-start: none;
             grid-row-end: none;
-            display: flex;
-            flex-direction: column;
-
+            @include flex(flex,column,row,row);
+            
             div {
                 h5 {
                     font-size: 1rem;
@@ -200,8 +189,7 @@
             grid-column-end: none;
 
             .main__section__proximoevento__div {
-                display: flex;
-                flex-direction: row;
+                @include flex(flex,row,row,row)
             }
         }
     }
@@ -248,8 +236,7 @@
 
     footer {
         .footer__div__pie {
-            flex-direction: column;
-            align-items: center;
+            @include flex(flex,column,row,center);
         }
     }
 }

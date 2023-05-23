@@ -20,8 +20,7 @@ main{
             text-align: center;
         }
         div{
-            display: flex;
-            justify-content: space-between;
+            @include flex(flex,row,space-between,row);
             p{
                 font-size: 1.5rem;
                 text-align: center;
@@ -39,17 +38,13 @@ main{
         grid-column-end: 2;
         grid-row-start: 2;
         grid-row-end: 4;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
+        @include flex(flex,column,flex-end,row);
         h4{
             text-align: center;
             font-size: 2rem;
         }
         div{
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
+            @include flex(flex,column,flex-start,row);
             height: 100px;
             h5{
                 font-size: 1.5rem;
@@ -67,11 +62,9 @@ main{
             text-align: center;
         }
         .main__section__proximoevento__div{
-            display: flex;
-            align-items: center;
+            @include flex(flex,row,row,center);
             div{
-                display: flex;
-                flex-direction: column;
+                @include flex(flex,column,row,row);
                 h5{
                     font-size: 1.5rem;
                     text-align: center;
@@ -126,15 +119,11 @@ main{
         "desc5 desc5 foto5"
         "foto6 desc6 desc6";
     .main__section__hero__qs{
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
+        @include flex(flex,column,row,center);
         text-align: center;
     }
     div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex(flex,column,row,center);
         img{
             max-height: 300px;
             height: 100%;

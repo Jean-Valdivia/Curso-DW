@@ -1,15 +1,12 @@
 footer{
-    background-color: #A19F9F;
+    background-color: nth($color,1);
     text-decoration-color: black;
     margin: 0px;
     margin-top: auto;
     padding: 0px;
     width: 100%;
     .footer__div__pie{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: end;
+        @include flex(flex,row,space-between,end);
         padding-top: 10px;
         padding-bottom: 10px;
         div{

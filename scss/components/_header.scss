@@ -1,19 +1,17 @@
 header {
-    background-color: #ced8e0;
+    background-color: nth($color,1);
     margin: 0px;
     padding: 0px;
     height: fit-content;
 
     section {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex(flex,row,center,center);
         font-family: 'Secular One', sans-serif;
         text-align: center;
         height: fit-content;
 
         .header__h {
-            color: #293845;
+            color: nth($color,3);
             font-size: 55px;
             width: 40%;
             padding: 0px 30px 0px 30px;
@@ -27,7 +25,7 @@ header {
     }
 
     nav {
-        background-color: #ced8e0;
+        background-color: nth($color,1);
         height: fit-content;
 
         .nav__iconoburguer {

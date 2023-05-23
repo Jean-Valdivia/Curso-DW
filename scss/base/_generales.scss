@@ -9,8 +9,7 @@ html {
     height: 100%;
 }
 body {
-    display: flex;
-    flex-direction: column;
+    @include flex(flex,column,row,row);
     min-height: 100%;
-    background-color: antiquewhite;
+    background-color: nth($color, 2);
 }
