@@ -1,0 +1,56 @@
+header {
+    background-color: #ced8e0;
+    margin: 0px;
+    padding: 0px;
+    height: fit-content;
+
+    section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Secular One', sans-serif;
+        text-align: center;
+        height: fit-content;
+
+        .header__h {
+            color: #293845;
+            font-size: 55px;
+            width: 40%;
+            padding: 0px 30px 0px 30px;
+            text-shadow: 1px 1px 3px black;
+        }
+
+        .header__img {
+            width: 100%;
+            max-width: 215px;
+        }
+    }
+
+    nav {
+        background-color: #ced8e0;
+        height: fit-content;
+
+        .nav__iconoburguer {
+            position: absolute;
+            top: 0.3rem;
+            left: 1rem;
+            cursor: pointer;
+            width: 35px;
+            z-index: 1;
+            display: none;
+            img{
+                max-width: 100%;
+            }
+        }
+        .nav__input{
+            display: none;
+        }
+        .nav__input:checked + .nav{
+            transform: translateX(0)
+        }
+
+        .nav {
+            justify-content: space-evenly;
+        }
+    }
+}
