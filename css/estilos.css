@@ -196,16 +196,14 @@ main {
     border-top: dashed #3E5B5F; }
 
 /**configuracion experiencias**/
-.main_section_experiencias div p button {
+.main__acordeon div div h2 button {
   background-color: black;
   box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.5); }
 
-.main_section_experiencias div div .card-body {
-  border: dotted #293845; }
-  .main_section_experiencias div div .card-body div .main_section_experiencias_img {
-    width: 100%;
-    padding: 10px;
-    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7)); }
+.main__acordeon div div div div img {
+  width: 100%;
+  padding: 10px;
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7)); }
 
 /**configuracion merch**/
 .main__section__merch {
