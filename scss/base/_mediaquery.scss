@@ -110,7 +110,7 @@
 @media screen and (max-width: nth($screendim, 2)) {
     header {
         @include flex(flex,row-reverse,row,row);
-        section {
+        div {
             @include flex(flex,column,row,center);
             width: 100%;
             padding-top: 5%;

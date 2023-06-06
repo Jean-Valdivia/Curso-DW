@@ -4,7 +4,7 @@ header {
     padding: 0px;
     height: fit-content;
 
-    section {
+    div {
         @include flex(flex,row,center,center);
         font-family: 'Secular One', sans-serif;
         text-align: center;

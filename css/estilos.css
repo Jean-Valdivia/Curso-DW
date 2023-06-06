@@ -34,7 +34,7 @@ header {
   margin: 0px;
   padding: 0px;
   height: fit-content; }
-  header section {
+  header div {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -42,13 +42,13 @@ header {
     font-family: 'Secular One', sans-serif;
     text-align: center;
     height: fit-content; }
-    header section .header__h {
+    header div .header__h {
       color: #293845;
       font-size: 55px;
       width: 40%;
       padding: 0px 30px 0px 30px;
       text-shadow: 1px 1px 3px black; }
-    header section .header__img {
+    header div .header__img {
       width: 100%;
       max-width: 215px; }
   header nav {
@@ -327,17 +327,17 @@ footer {
     flex-direction: row-reverse;
     justify-content: row;
     align-items: row; }
-    header section {
+    header div {
       display: flex;
       flex-direction: column;
       justify-content: row;
       align-items: center;
       width: 100%;
       padding-top: 5%; }
-      header section .header__h {
+      header div .header__h {
         font-size: 25px;
         width: 65%; }
-      header section .header__img {
+      header div .header__img {
         width: 120px;
         margin: 1rem; }
     header nav {
