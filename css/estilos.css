@@ -153,16 +153,16 @@ main {
 /**configuracion contacto**/
 .main__contacto {
   padding: 20px; }
-  .main__contacto .formulario {
+  .main__contacto form {
     font-size: 20px; }
-    .main__contacto .formulario div {
+    .main__contacto form div {
       width: 100%;
       height: 100%;
       justify-content: space-between;
       padding: 10px; }
-      .main__contacto .formulario div label {
+      .main__contacto form div label {
         padding-top: 5px; }
-      .main__contacto .formulario div input {
+      .main__contacto form div input {
         width: 100%; }
 
 /**configuracion quienes somos**/
