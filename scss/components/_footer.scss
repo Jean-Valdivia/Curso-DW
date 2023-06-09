@@ -5,6 +5,14 @@ footer{
     margin-top: auto;
     padding: 0px;
     width: 100%;
+    div{
+        ul{
+            li{
+                margin-left: 5px;
+                margin-right: 5px
+            }
+        }
+    }
     .footer__div__pie{
         @include flex(flex,row,space-between,end);
         padding-top: 10px;

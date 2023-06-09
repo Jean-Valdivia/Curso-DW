@@ -1,5 +1,5 @@
 main{
-    padding: 5px;
+    padding: 1%;
     width: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -7,6 +7,7 @@ main{
 /**configuracion index**/
 
 .index__body__grid-container{
+    padding: 2%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
@@ -26,15 +27,19 @@ main{
                 text-align: center;
                 padding-top: 2rem;
             }
-            img{
-                @extend %shadowpic;
-                width: 450px;
-                margin: 10px;
+            div{
+                img{
+                    @extend %shadowpic;
+                    width: 450px;
+                    margin: 10px;
+                }
             }
+
         }
         
     }
     .main__section__noticias{
+        padding: 5%;
         @extend %shadowcontent;
         grid-column-start: 1;
         grid-column-end: 2;
@@ -60,6 +65,7 @@ main{
         }
     }
     .main__section__proximoevento{
+        padding: 5%;
         @extend %shadowcontent;
         grid-column-start: 2;
         grid-column-end: 4;
@@ -76,6 +82,7 @@ main{
                     text-align: center;
                 }
                 p{
+                    padding: 1%;
                     font-size: 1rem
                 }
             }
@@ -106,12 +113,21 @@ main{
                 width: 100%;
             }
         }
+        .form__div__buttons{
+            @include flex(flex,row,space-around,center);
+            input{
+                width: 150px;
+                border-radius: 10px;
+                background-color: nth($color,1)
+            }
+        }
     }
 }
 
 /**configuracion quienes somos**/
 
 .qs__main__grid-container{
+    padding: 2%;
     display: grid;
     grid-template-columns: 30% 40% 30%;
     grid-template-rows: auto repeat(6, auto);
@@ -195,19 +211,23 @@ main{
 /**configuracion experiencias**/
 
 .exp__main__acordeon{
+    margin: 2%;
     div{
         div{
             h2{
                 button{
-                    background-color: black;
+                    background-color: nth($color,3);
                     box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.5);
+                    margin: 5px
                 }
             }
             div{
                 div{
+                    @include flex (flex, column, center, center);
                     img{
-                        width: 100%;
-                        margin: 10px;
+                        max-height: 650px;
+                        max-width: 90%;
+                        margin: 20px;
                         @extend %shadowpic;
                     }
                 }
@@ -219,6 +239,7 @@ main{
 /**configuracion merch**/
 
 .main__section__merch{
+    padding: 2%;
     display: grid;
     grid-template-columns: repeat(auto-fit, 350px);
     grid-template-rows: repeat(auto);
@@ -226,10 +247,19 @@ main{
     .card{
         @extend %shadowcontent;
         margin: 10px;
+        padding: 20px;
         .card-img-top{
-            height: 250px;
+            height: 200px;
             width: auto;
             object-fit: cover;
+        }
+        div{
+            a{
+                position: absolute;
+                left: 100px;
+                right: 100px;
+                bottom: 15px;
+            }
         }
     }
 }

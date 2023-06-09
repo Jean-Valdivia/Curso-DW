@@ -2,7 +2,7 @@
 
 @media screen and (max-width: nth($screendim, 1)) {
     header {
-        section {
+        div {
             .header__h {
                 font-size: 40px;
             }
@@ -10,6 +10,7 @@
     }
 
     .index__body__grid-container {
+        padding: 2%;
         display: grid;
         width: 100%;
         grid-template-columns: repeat(2, 1fr);
@@ -22,15 +23,18 @@
 
             div {
                 p {
+                    padding: 2%;
+                    max-width: 50%;
                     font-size: 1.2rem;
-                    padding-top: 0rem;
                 }
 
-                img {
-                    object-fit: scale-down;
-                    width: 250px;
-                    height: auto;
+                div{
+                    padding: 2%;
+                    img {
+                        max-width: 100%;
+                        height: max-content;
                 }
+            }
             }
         }
 
@@ -64,7 +68,7 @@
                     }
 
                     p {
-                        font-size: 0.6rem
+                        font-size: 0.8rem
                     }
                 }
 
@@ -87,18 +91,21 @@
 
         div {
             img {
-                max-height: 200px;
-                height: fit-content;
+                margin: 5px;
+                max-height: 180px;
+                width: fit-content;   
             }
         }
     }
 
     footer {
-        div {
+        .footer__div__pie{
             div {
-                img {
-                    height: 22px;
-                    padding-left: 2px;
+                a{
+                    img{
+                        height: 25px;
+                        padding-left: 5px;
+                    }
                 }
             }
         }
@@ -155,13 +162,11 @@
             div {
                 @include flex(flex,column,center,center);
                 p {
+                    max-width: 95%;
                     font-size: 1rem;
                 }
-
-                img {
-                    width: 350px;
-                    object-fit: cover;
-                    padding: 5px;
+                div{
+                    width: 95%;
                 }
             }
         }
@@ -179,7 +184,7 @@
                 }
 
                 p {
-                    font-size: 0.6rem;
+                    font-size: 0.8rem;
                 }
             }
         }
