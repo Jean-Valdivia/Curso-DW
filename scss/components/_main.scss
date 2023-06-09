@@ -1,4 +1,4 @@
-main{
+main {
     padding: 1%;
     width: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -6,29 +6,34 @@ main{
 
 /**configuracion index**/
 
-.index__body__grid-container{
+.index__body__grid-container {
     padding: 2%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    .main__section__hero{
+
+    .main__section__hero {
         grid-row-start: 1;
         grid-row-end: 3;
         grid-column-start: 1;
         grid-column-end: 4;
-        h3{
+
+        h3 {
             font-size: 2.5rem;
             text-align: center;
         }
-        div{
-            @include flex(flex,row,space-between,row);
-            p{
+
+        div {
+            @include flex(flex, row, space-between, row);
+
+            p {
                 font-size: 1.5rem;
                 text-align: center;
                 padding-top: 2rem;
             }
-            div{
-                img{
+
+            div {
+                img {
                     @extend %shadowpic;
                     width: 450px;
                     margin: 10px;
@@ -36,9 +41,10 @@ main{
             }
 
         }
-        
+
     }
-    .main__section__noticias{
+
+    .main__section__noticias {
         padding: 5%;
         @extend %shadowcontent;
         grid-column-start: 1;
@@ -48,46 +54,57 @@ main{
         height: fit-content;
         margin-top: auto;
         margin-bottom: 0px;
-        @include flex(flex,column,flex-end,row);
-        h4{
+        @include flex(flex, column, flex-end, row);
+
+        h4 {
             text-align: center;
             font-size: 2rem;
         }
-        div{
-            @include flex(flex,column,flex-start,row);
+
+        div {
+            @include flex(flex, column, flex-start, row);
             height: 100px;
-            h5{
+
+            h5 {
                 font-size: 1.5rem;
             }
-            p{
+
+            p {
                 font-size: 1rem;
             }
         }
     }
-    .main__section__proximoevento{
+
+    .main__section__proximoevento {
         padding: 5%;
         @extend %shadowcontent;
         grid-column-start: 2;
         grid-column-end: 4;
-        h4{
+
+        h4 {
             font-size: 2rem;
             text-align: center;
         }
-        .main__section__proximoevento__div{
-            @include flex(flex,row,row,center);
-            div{
-                @include flex(flex,column,row,row);
-                h5{
+
+        .main__section__proximoevento__div {
+            @include flex(flex, row, row, center);
+
+            div {
+                @include flex(flex, column, row, row);
+
+                h5 {
                     font-size: 1.5rem;
                     text-align: center;
                 }
-                p{
+
+                p {
                     padding: 1%;
                     font-size: 1rem
                 }
             }
-            div{
-                img{
+
+            div {
+                img {
                     height: 150px;
                 }
             }
@@ -97,28 +114,34 @@ main{
 
 /**configuracion contacto**/
 
-.main__contacto{
+.main__contacto {
     padding: 20px;
-    form{
+
+    form {
         font-size: 20px;
-        div{
+
+        div {
             width: 100%;
             height: 100%;
             justify-content: space-between;
             padding: 10px;
-            label{
+
+            label {
                 padding-top: 5px;
             }
-            input{
+
+            input {
                 width: 100%;
             }
         }
-        .form__div__buttons{
-            @include flex(flex,row,space-around,center);
-            input{
+
+        .form__div__buttons {
+            @include flex(flex, row, space-around, center);
+
+            input {
                 width: 150px;
                 border-radius: 10px;
-                background-color: nth($color,1)
+                background-color: nth($color, 1)
             }
         }
     }
@@ -126,7 +149,7 @@ main{
 
 /**configuracion quienes somos**/
 
-.qs__main__grid-container{
+.qs__main__grid-container {
     padding: 2%;
     display: grid;
     grid-template-columns: 30% 40% 30%;
@@ -140,69 +163,89 @@ main{
         "foto4 desc4 desc4"
         "desc5 desc5 foto5"
         "foto6 desc6 desc6";
-    .main__section__hero__qs{
-        @include flex(flex,column,row,center);
+
+    .main__section__hero__qs {
+        @include flex(flex, column, row, center);
         text-align: center;
     }
-    div{
-        @include flex(flex,column,row,center);
-        img{
+
+    div {
+        @include flex(flex, column, row, center);
+
+        img {
             max-height: 300px;
             height: 100%;
             @extend %shadowpic;
         }
     }
-    h5{
+
+    h5 {
         font-size: 2rem;
     }
-    p{
+
+    p {
         font-size: 1.3rem;
     }
-    .main__section__hero__qs{
+
+    .main__section__hero__qs {
         grid-area: titulo;
     }
+
     .main__section__div__texto1 {
         grid-area: desc1;
     }
+
     .main__section__div__foto1 {
         grid-area: foto1;
     }
+
     .main__section__div__texto2 {
         grid-area: desc2;
     }
+
     .main__section__div__foto2 {
         grid-area: foto2;
     }
+
     .main__section__div__texto3 {
         grid-area: desc3;
     }
+
     .main__section__div__foto3 {
         grid-area: foto3;
     }
+
     .main__section__div__texto4 {
         grid-area: desc4;
     }
+
     .main__section__div__foto4 {
         grid-area: foto4;
     }
+
     .main__section__div__texto5 {
         grid-area: desc5;
     }
+
     .main__section__div__foto5 {
         grid-area: foto5;
         border-bottom: dashed #3E5B5F;
     }
+
     .main__section__div__texto6 {
         grid-area: desc6;
     }
+
     .main__section__div__foto6 {
         grid-area: foto6;
     }
-    .main__section__div__foto{
+
+    .main__section__div__foto {
         border-bottom: dashed #3E5B5F;
         padding-bottom: 5px;
     }
-    .main__section__div__texto{
+
+    .main__section__div__texto {
         border-bottom: dashed #3E5B5F;
         border-top: dashed #3E5B5F;
     }
@@ -210,21 +253,24 @@ main{
 
 /**configuracion experiencias**/
 
-.exp__main__acordeon{
+.exp__main__acordeon {
     margin: 2%;
-    div{
-        div{
-            h2{
-                button{
-                    background-color: nth($color,3);
+
+    div {
+        div {
+            h2 {
+                button {
+                    background-color: nth($color, 3);
                     box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.5);
-                    margin: 5px
+                    margin: 5px;
                 }
             }
-            div{
-                div{
+
+            div {
+                div {
                     @include flex (flex, column, center, center);
-                    img{
+
+                    img {
                         max-height: 650px;
                         max-width: 90%;
                         margin: 20px;
@@ -238,28 +284,37 @@ main{
 
 /**configuracion merch**/
 
-.main__section__merch{
+.main__section__merch {
     padding: 2%;
     display: grid;
     grid-template-columns: repeat(auto-fit, 350px);
     grid-template-rows: repeat(auto);
     justify-content: center;
-    .card{
+
+    .card {
+        transition: 0.5s;
+        object-fit: cover;
         @extend %shadowcontent;
         margin: 10px;
         padding: 20px;
-        .card-img-top{
+
+        .card-img-top {
             height: 200px;
             width: auto;
             object-fit: cover;
         }
-        div{
-            a{
+
+        div {
+            button {
                 position: absolute;
                 left: 100px;
                 right: 100px;
                 bottom: 15px;
             }
         }
+    }
+
+    .card:hover {
+        scale: 1.1;
     }
 }
